@@ -1,0 +1,104 @@
+<html>
+    <head>
+      
+        <title>Eliza Rosca | Portfolio</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <link href="resources/style.css" type="text/css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <script>
+            let showmoreskills = function(event){
+                if(event.target.innerHTML.match('More')){
+                document.getElementsByClassName('skills')[0].style.display = 'block';
+               
+                event.target.innerHTML = 'Read Less';
+                }else{
+                    document.getElementsByClassName('skills')[0].style.display = 'none';
+               
+               event.target.innerHTML = 'Read More';
+                }
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <div class="grid">
+            <header>
+                <h2>Eliza Rosca</h2>
+                <nav>
+                    <span><a href="index.html">Home  </a></span>
+                    <span><a href="#">Experience  </a></span>
+                    <span><a href="#">Projects</a></span>
+                    <span><a href="#">Posts </a></span>
+                    <span><a href="#">Resume </a></span>
+                    <span><a href="contact.html">Contact us </a></span>
+                </nav>
+            </header>
+            <aside>
+                <img src="resources/images/eliza.JPG"/>
+                <h3>Rosca Eliza</h3>
+                <p>Database Analyst</p>
+                <p>Bucharest Romania</p>
+           </aside>
+            <main>
+                 <h3>Biography</h3>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <div class="interests">
+                    <ul>
+                        <h4>Interests</h4>
+                        <li>Web Development</li>
+                        <li>Cars & Automotive Enginneering</li>
+                        <li>Photography</li>
+                    </ul>
+                    
+                    <ul>
+                        <h4>Second List</h4>
+                        <li>List item #1</li>
+                        <li>List item #2</li>
+                        
+                    </ul>
+                </div>
+                <a href="#" onclick="showmoreskills(event)" class="button3">Read More</a>
+                </main>
+               
+                <div class="skills">
+                    
+                    <h3>Skills</h3>
+                    <div class="allskills">    
+                        <div class="skill">
+                        <h3>PHP</h3>
+                        <p>Laravel,Codeigniter</p>
+                        </div>
+                        <div class="skill">
+                       <h3>Front End Tech</h3>
+                        <p>HTML,CSS3,Jquery,Javascript</p>
+                        </div>
+                        <div class="skill">
+                        <h3>.NET Framework</h3>
+                        <p>.NET C#,Visual Basic</p>
+                        </div>
+                        <div class="skill">
+                        <h3>Python</h3>
+                        <p>Basic Python</p>
+                        </div>
+                        <div class="skill">
+                        <h3>Databases</h3>
+                        <p>Microsoft SQL Server, MySQL</p>
+                        </div>
+                        <div class="skill">
+                        <h3>Extensions development </h3>
+                        <p>Browser extensions</p>
+                        </div>
+                    </div>    
+                </div>
+               
+            
+        </div>
+        <footer>
+            © Eliza Rosca
+        </footer>
+    </body>
+</html>
